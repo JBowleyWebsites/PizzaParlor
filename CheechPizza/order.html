@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cheech's Pizza - Order</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <img src="pBg.jpg" alt="">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="./order.html">Order</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="#">Our Location</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="col">
+        <div class="prompt">
+          <h1>What can we get you?</h1>
+          <p>Please enter your basic information for the order.</p>
+        </div>
+        <form class="order" action="#" method="get">
+          <input type="text" name="fN" value="" placeholder="First Name">
+          <input type="text" name="lN" value="" placeholder="Last Name">
+          <input type="text" name="phoNum" value="" placeholder="123-456-7890">
+          <select class="pizzaChoice" name="pizzaChoice">
+            <option value="piz1">Pepperoni</option>
+            <option value="piz2">Cheese</option>
+            <option value="piz3">Meaty</option>
+            <option value="piz4">Veggie</option>
+            <option value="piz5">Hawaiian</option>
+            <option value="piz6">BBQ Chicken</option>
+          </select>
+          <input type="number" name="amt" id="amt" onchange="getPrice()" min="1" placeholder="How Many?">
+          <input type="submit"  name="submit" value="Order">
+        </form>
+        <p id="price">Price: </p>
+      </div>
+      <div class="col">
+        <div class="prompt">
+          <h1>Join the family</h1>
+          <p>Here's what one of our family members thinks of us:</p>
+        </div>
+        <div class="custReview">
+          <p class="rating">&star;&star;&star;&star;&star;</p>
+          <p><em>"BEST PIZZA EVER!"</em> <br><br>- PizzaLover39</p>
+        </div>
+        <h3>Follow Us!</h3>
+        <div class="socials">
+          <img src="facebook-brands.svg" alt="Facebook Link">
+          <img src="instagram-brands.svg" alt="Instagram Link">
+          <img src="twitter-brands.svg" alt="Twitter Link">
+        </div>
+      </div>
+    </main>
+    <footer>&copy; Cheechcorp 2021</footer>
+  </body>
+</html>
