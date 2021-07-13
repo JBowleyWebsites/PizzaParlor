@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <script>
+      function getPrice() {
+        let price = document.getElementById("amt").value * 9;
+        document.getElementById("price").innerHTML = "Price: $" + price + " + tax";
+      }
+    </script>
     <img src="pBg.jpg" alt="">
     <nav>
       <ul>
